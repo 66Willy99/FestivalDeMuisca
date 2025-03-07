@@ -28,7 +28,7 @@ export function html(done){
 
 export function imgs(done){
     src('src/img/**/*') // Ubica todas las imágenes dentro de src/img/
-        .pipe(dest('build/img')) // Copia a build/img/
+        .pipe(dest('build')) // Copia a build/img/
     done();
 }
 
