@@ -6,7 +6,7 @@ const sass = gulpSass( dartSass ); // Se le pasa la librería Dart Sass a gulp-s
 
 export function js(done){
     src('src/js/app.js')
-        .pipe( dest('js') )
+        .pipe( dest('build/js') )
     done()
 }
 
@@ -16,7 +16,7 @@ export function css(done){
         //compila el archivo scss
         .pipe( sass().on('error', sass.logError) ) // Una vez ubicado el archivo busca el pipe para realizar la tarea y en caso de haber un error lo muestra en consola
         //Guarda el archivo css en la carpeta build/css
-        .pipe( dest('css', {sourcemaps: '.'}) ) // Una vez compilado el archivo lo guarda en la carpeta build/css junto con el sourcemap
+        .pipe( dest('build/css', {sourcemaps: '.'}) ) // Una vez compilado el archivo lo guarda en la carpeta build/css junto con el sourcemap
     done()
 }
 
@@ -28,13 +28,13 @@ export function html(done){
 
 export function imgs(done){
     src('src/img/**/*') // Ubica todas las imágenes dentro de src/img/
-        .pipe(dest('img')) // Copia a build/img/
+        .pipe(dest('build/img')) // Copia a build/img/
     done();
 }
 
 export function video(done){
     src('video/*') // Ubica todas las imágenes dentro de src/img/
-        .pipe(dest('video')) // Copia a build/img/
+        .pipe(dest('build/video')) // Copia a build/img/
     done();
 }
 
