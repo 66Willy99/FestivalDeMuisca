@@ -1,0 +1,33 @@
+{
+    "name": "festivaldemusica",
+    "version": "1.0.0",
+    "description": "Aprendiendo SASS y NPM",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "sass": "sass --watch src/scss:build/css",
+      "dev": "gulp",
+      "build": "gulp"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/66Willy99/FestivalDeMusica.git"
+    },
+    "keywords": [
+      "SASS",
+      "NPM",
+      "Gulp"
+    ],
+    "author": "Guillermo Mercado",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/66Willy99/FestivalDeMusica/issues"
+    },
+    "homepage": "https://github.com/66Willy99/FestivalDeMusica#readme",
+    "devDependencies": {
+      "gulp": "^5.0.0",
+      "gulp-sass": "^6.0.0",
+      "sass": "^1.85.1"
+    }
+  }
